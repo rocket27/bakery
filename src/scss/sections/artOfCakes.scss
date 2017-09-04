@@ -3,7 +3,6 @@
     background: url('../../img/bg/artOfCakes/artOfCakesBg.jpg') no-repeat;
     background-size: cover;
     position: relative;
-    // color: #fff;
 }
 
 .artOfCakes__border {
@@ -15,10 +14,81 @@
 
 .artOfCakesContent {
     @extend %flexType1;
+    align-items: center;
+    padding-top: 100px;
+    &__left {
+        width: 630px;
+        padding: 0 70px;
+    }
+    &__right {
+        position: relative;
+    }
+}
+
+.aboutBlock {
+    text-align: center;
+    margin-bottom: 45px;
+    &__title {
+        font-size: 48px;
+        font-family: 'alegreyaBold';
+    }
+    &__slogan {
+        font-family: 'alegreyaBold';
+        line-height: 30px;
+        color: $color2;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    &__text {
+        line-height: 24px;
+    }
+}
+
+.workerBlock {
+    text-align: center;
+    &__position {
+        font: 24px / 30px 'alegreyaBold';
+        margin-bottom: 40px;
+    }
+    &__info {
+        width: 370px;
+        @extend %flexType1;
+        align-items: center;
+        margin: 0 auto 20px;
+    }
+    &__name, &__surname {
+        display: inline-block;
+        width: 110px;
+        height: 60px;
+        font: 24px / 30px 'alegreyaBold';
+        text-align: center;
+        border-top: 1px solid #d7d5ca;
+        border-bottom: 1px solid #d7d5ca;
+        vertical-align: middle;
+        padding: 15px 0;
+    }
+    &__photo {
+        border: 5px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__image {
+        display: block;
+    }
+    &__welcomeWord {
+        width: 400px;
+        background: url('../../img/decor/quotesOpen.png') no-repeat left top,
+                    url('../../img/decor/quotesClose.png') no-repeat right bottom;
+        font: 24px / 30px 'scriptinaRegular';
+        color: $color2;
+        padding: 15px 0;
+        margin: 0 auto;
+    }
 }
 
 .gallery {
-    width: 610px;
+    width: 630px;
+    padding: 0 10px;
     @extend %flexType1;
     flex-wrap: wrap;
     &__item {
@@ -41,4 +111,8 @@
     &__image {
         display: block;
     }
+}
+
+.galleryMark {
+    @extend %positionCenter;
 }
