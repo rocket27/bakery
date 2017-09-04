@@ -1,0 +1,115 @@
+#welcome {
+    min-height: 900px;
+    background: url('../../img/bg/welcome/welcomeBg.jpg') no-repeat top center;
+    background-size: cover;
+    color: #fff;
+    box-sizing: content-box;
+    border-bottom: 10px solid #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 10;  
+}
+
+.header {
+    background-color: $bgColor;
+}
+
+.headerContent {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: 'scriptinaRegular', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-bottom: 18px;
+}
+
+.mainMenu__list {
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'alegreyaBold';
+    text-transform: uppercase;
+}
+
+.mainMenu__item {
+    position: relative;
+    &::after {
+        display: block;
+        content: '\223C';
+        position: absolute;
+        top: 0;        
+        right: -65px;
+    }
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    &__icon {
+        display: block;
+        width: 16px;
+        height: 16px;
+        fill: #efebe4;
+        transition: fill .3s;
+        &:hover {
+            fill: #fff;
+        }
+    }
+}
+
+.welcomeContent {
+    min-height: 830px;
+    @extend %flexType2;
+    &__title {
+        font-family: 'playfairDisplayBold';
+        font-size: 92px;
+        background: url('../../img/decor/dashedLline.png') no-repeat bottom center;
+        padding-bottom: 50px;
+        margin: 190px 0 60px;
+    }
+    &__slogan {
+        font: 24px / 36px 'proximaNovaRegular';
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__menuButton {
+        width: 200px;
+        height: 50px;
+        background-color: $bgColor;
+        font-family: 'alegreyaBold';
+        line-height: 24px;
+        text-transform: uppercase;
+        border: 1px dashed #9e9c93;
+    }
+}
+
+.bunBox {
+    width: 106px;
+    height: 106px;
+    background: url('../../img/bg/welcome/bunBoxBg.png') no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -58px;
+    transform: translateX(-50%);
+    &::before {
+        display: block;
+        content: '';
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        @extend %positionCenter;
+    }
+    &__image {
+        display: block;
+        @extend %positionCenter;
+    }
+}

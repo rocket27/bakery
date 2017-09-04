@@ -1,0 +1,44 @@
+#artOfCakes {
+    min-height: 760px;
+    background: url('../../img/bg/artOfCakes/artOfCakesBg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    // color: #fff;
+}
+
+.artOfCakes__border {
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.artOfCakesContent {
+    @extend %flexType1;
+}
+
+.gallery {
+    width: 610px;
+    @extend %flexType1;
+    flex-wrap: wrap;
+    &__item {
+        display: block;
+        width: 295px;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+        &::before {
+            display: block;
+            content: '';
+            box-sizing: border-box;
+            width: 283px;
+            height: 238px;
+            border: 5px solid #fff;
+            @extend %positionCenter;
+        }
+    }
+    &__image {
+        display: block;
+    }
+}

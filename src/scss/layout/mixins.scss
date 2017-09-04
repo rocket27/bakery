@@ -1,0 +1,18 @@
+%flexType1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+%flexType2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+%positionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
