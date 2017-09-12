@@ -2,11 +2,128 @@
     min-height: 760px;
     background: url('../../img/bg/tastyPancakes/tastyPancakesBg.jpg') no-repeat;
     background-size: cover;
-    // position: relative;
 }
 
 .tastyPancakesContent {
-    width: 965px;
-    height: 512px;
+    @extend %flexType1;
+    width: 1060px;
+    height: 652px;
     padding: 140px 0 0 95px;
+    &__left {
+        width: 419px;
+        height: 512px;
+        overflow: hidden;
+        position: relative;        
+    }
+    &__image {
+        display: block;
+    }
+    &__right {
+        width: 546px;
+        height: 512px;
+        background: #fff url('../../img/bg/tastyPancakes/windmill.png') no-repeat right bottom;
+        padding: 60px 60px 20px;
+        position: relative;
+    }
+}
+
+.starList {
+    @extend %positionCenter;
+    left: 40px;
+    &__item {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    &__image {
+        display: block;
+    }
+}
+
+.pancakesAbout {
+    margin-bottom: 100px;
+    &__title {
+        font-family: 'alegreyaBold';
+        font-size: 48px;
+    }
+    &__slogan {
+        font: 14px / 30px 'alegreyaBold';
+        text-transform: uppercase;
+        color: $color2;
+        margin-bottom: 50px;
+    }
+    &__text {
+        line-height: 24px;
+    }
+}
+
+.pancakesSlider {
+    width: 330px;
+    @extend %flexType1;
+    margin: 0 auto;
+    &__image {
+        display: block;
+    }
+}
+
+.sliderBlock {
+    position: relative;
+}
+
+.sliderTrigger {
+    width: 32px;
+    height: 32px;
+    @extend %positionCenter;
+    transform: translateY(-50%);
+    &__image {
+        display: block;
+        @extend %positionCenter;
+    }
+    &_left {
+        left: 0;
+    }
+    &_right {
+        left: auto;
+        right: 0;
+    }
+}
+
+.readyTime {
+    width: 200px;
+    height: 200px;
+    background: url('../../img/bg/tastyPancakes/readyInBg.jpg') no-repeat;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'alegreyaBold';    
+    position: absolute;
+    top: -43px;
+    right: -105px;
+    &__readyIn, &__amount, &__unit {
+        text-align: center;        
+    }
+    &__readyIn {
+        text-transform: uppercase;
+        color: $color2;
+        margin-top: 25px;
+    }
+    &__amount {
+        font-size: 92px;
+        line-height: 1.1;
+        color: #dfc691;
+    }
+    &__unit {
+        color: #979285;
+    }
+}
+
+.menuButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    @extend %positionCenter;
+    left: 0;
+    &__image {
+        @extend %positionCenter;
+    }
 }
