@@ -11,6 +11,7 @@ body {
 	font-family: $baseFont;
 	font-size: 14px;
 	line-height: 1.42;
+	letter-spacing: .1em;
 	color: $color1;
 	-webkit-font-smoothing: antialiased;
 }
@@ -46,11 +47,11 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper {
 	min-width: $containerWidth + 40px;
-	// height: 100%;
 	overflow: hidden;	
 }
 
 .container {
 	width: $containerWidth;
 	margin: 0 auto;
+	height: 100%;	
 }

@@ -1,7 +1,6 @@
 #artOfCakes {
-    min-height: 760px;
-    background: url('../../img/bg/artOfCakes/artOfCakesBg.jpg') no-repeat;
-    background-size: cover;
+    @extend %sectionLayout;
+    background-image: url('../../img/bg/artOfCakes/artOfCakesBg.jpg');
     position: relative;
 }
 
@@ -60,7 +59,7 @@
         display: inline-block;
         width: 110px;
         height: 60px;
-        font: 24px / 30px 'alegreyaBold';
+        font: 24px / 30px 'alegreyaRegular';
         text-align: center;
         border-top: 1px solid #d7d5ca;
         border-bottom: 1px solid #d7d5ca;

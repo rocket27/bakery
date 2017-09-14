@@ -1,7 +1,6 @@
 #tastyPancakes {
-    min-height: 760px;
-    background: url('../../img/bg/tastyPancakes/tastyPancakesBg.jpg') no-repeat;
-    background-size: cover;
+    @extend %sectionLayout;
+    background-image: url('../../img/bg/tastyPancakes/tastyPancakesBg.jpg');
 }
 
 .tastyPancakesContent {
@@ -94,7 +93,8 @@
     background: url('../../img/bg/tastyPancakes/readyInBg.jpg') no-repeat;
     font-size: 18px;
     line-height: 30px;
-    font-family: 'alegreyaBold';    
+    font-family: 'alegreyaBold';  
+    box-shadow: 0 0 55px 10px rgba(105, 80, 58, .45); 
     position: absolute;
     top: -43px;
     right: -105px;
@@ -109,7 +109,7 @@
     &__amount {
         font-size: 92px;
         line-height: 1.1;
-        color: #dfc691;
+        color: $color3;
     }
     &__unit {
         color: #979285;

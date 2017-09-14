@@ -31,7 +31,7 @@
     width: 780px;
     display: flex;
     justify-content: space-between;
-    font-family: 'alegreyaBold';
+    font-family: 'alegreyaRegular';
     text-transform: uppercase;
 }
 
@@ -87,7 +87,7 @@
         font-family: 'alegreyaBold';
         line-height: 24px;
         text-transform: uppercase;
-        border: 1px dashed #9e9c93;
+        border: 1px dashed $color4;
     }
 }
 
