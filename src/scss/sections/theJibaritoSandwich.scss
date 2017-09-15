@@ -1,0 +1,50 @@
+#theJibaritoSandwich {
+    height: 1160px;
+    background: #f3f1e9 url('../../img/bg/theJibaritoSandwich/theJibaritoSandwichBg.png') no-repeat top center;
+}
+
+.theJibaritoSandwichContent {
+    padding-top: 90px;
+    // display: flex;
+    &__title, &__description {
+        font-family: 'alegreyaBold';
+        text-align: center;
+    }
+    &__title {
+        font-size: 48px;        
+    }
+    &__description {
+        line-height: 30px;
+        color: $color2;
+        text-transform: uppercase;
+        margin-top: -10px;
+    }
+}
+
+.composition {
+    width: 290px;    
+    text-align: center;
+    &__item {
+        @extend %flexType2;    
+        margin-bottom: 50px;
+    }
+    &__picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+        margin-bottom: 10px;
+    }
+    &__image {
+        display: block;
+    }
+    &__name {
+        font-family: 'alegreyaBold';
+        font-size: 30px;
+        color: $color2;
+        margin-bottom: 15px;
+    }
+    &__description {
+        line-height: 20px;
+    }
+}
