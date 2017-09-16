@@ -55,3 +55,37 @@ a:link, a:visited, a:hover, a:active {
 	margin: 0 auto;
 	height: 100%;	
 }
+
+.informationBox {
+    width: 200px;
+	height: 200px;
+	font: 18px / 30px 'alegreyaBold';
+	text-align: center;        
+	&__stage {
+        text-transform: uppercase;
+        color: $color2;
+        padding-top: 25px;
+	}
+	&__amount {
+		line-height: 1.1;		
+	}
+	&__unit {
+        color: #979285;
+    }
+	&_readyIn {
+		background: url('../../img/bg/tastyPancakes/readyInBg.jpg') no-repeat;
+		.informationBox__amount {
+			font-size: 92px;
+			color: $color3;
+		}
+	}
+	&_process {
+		background-color: rgba(255, 255, 255, .8);
+		.informationBox__amount {
+			font-size: 60px;
+		}
+		.informationBox__stage {
+			padding-top: 40px;
+		}
+	}
+}

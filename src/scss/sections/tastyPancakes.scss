@@ -87,33 +87,11 @@
     }
 }
 
-.readyTime {
-    width: 200px;
-    height: 200px;
-    background: url('../../img/bg/tastyPancakes/readyInBg.jpg') no-repeat;
-    font-size: 18px;
-    line-height: 30px;
-    font-family: 'alegreyaBold';  
+.informationBox_tastyPancakes {
     box-shadow: 0 0 55px 10px rgba(105, 80, 58, .45); 
     position: absolute;
     top: -43px;
     right: -105px;
-    &__readyIn, &__amount, &__unit {
-        text-align: center;        
-    }
-    &__readyIn {
-        text-transform: uppercase;
-        color: $color2;
-        margin-top: 25px;
-    }
-    &__amount {
-        font-size: 92px;
-        line-height: 1.1;
-        color: $color3;
-    }
-    &__unit {
-        color: #979285;
-    }
 }
 
 .menuButton {
