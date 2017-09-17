@@ -71,9 +71,24 @@
     }
     &__image {
         display: block;
-        width: auto;
+        width: 100%;
         height: 100%;
     }
+}
+
+a.theJibaritoSandwichContent__link {
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px dashed $color3;
+    font: 18px / 60px 'alegreyaBold';
+    color: $color3;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: -22px;
+    bottom: 126px;
 }
 
 .productInfo {
@@ -87,133 +102,3 @@
         }
     }
 }
-
-.img {
-    position: absolute;
-    left: -18px;
-    top: 0px;
-    width: 1638px;
-    height: 4380px;
-    z-index: 40;
-  }
-  .info {
-    position: absolute;
-    left: 9px;
-    top: 0px;
-    width: 1619px;
-    height: 4360px;
-    z-index: 39;
-  }
-  .prep_15_mins {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1619px;
-    height: 4360px;
-    z-index: 38;
-  }
-  .PREP__15_mins {
-    font-size: 18px;
-    font-family: "Alegreya";
-    color: rgb(164, 125, 94);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.667;
-    text-align: center;
-    position: absolute;
-    left: 1292px;
-    top: 3482.422px;
-    z-index: 37;
-  }
-  .bg {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.8;
-    position: absolute;
-    left: 1220px;
-    top: 3412px;
-    width: 219px;
-    height: 220px;
-    z-index: 36;
-  }
-  .cook_25_mins {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1619px;
-    height: 4360px;
-    z-index: 34;
-  }
-  .cook_35_mins {
-    font-size: 18px;
-    font-family: "Alegreya";
-    color: rgb(164, 125, 94);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.667;
-    text-align: center;
-    position: absolute;
-    left: 1290px;
-    top: 3683.344px;
-    z-index: 33;
-  }
-  .bg {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.8;
-    position: absolute;
-    left: 1220px;
-    top: 3613px;
-    width: 219px;
-    height: 220px;
-    z-index: 32;
-  }
-  .ready_in_50_mins {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1619px;
-    height: 4360px;
-    z-index: 30;
-  }
-  .ready_in_50_mins {
-    font-size: 18px;
-    font-family: "Alegreya";
-    color: rgb(164, 125, 94);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.667;
-    text-align: center;
-    position: absolute;
-    left: 1272.906px;
-    top: 3868.422px;
-    z-index: 29;
-  }
-  .bg {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 1220px;
-    top: 3813px;
-    width: 219px;
-    height: 220px;
-    z-index: 27;
-  }
-  .border {
-    border-width: 10px;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    position: absolute;
-    left: 608px;
-    top: 3435px;
-    width: 820px;
-    height: 536px;
-    z-index: 23;
-  }
-  .img_bg {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 599px;
-    top: 3435px;
-    width: 859px;
-    height: 576px;
-    z-index: 21;
-  }
-  
