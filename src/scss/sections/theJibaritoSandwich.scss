@@ -102,3 +102,23 @@ a.theJibaritoSandwichContent__link {
         }
     }
 }
+
+.footer {
+    width: 100%;
+}
+
+.footerMenu {
+    @extend %flexType1;
+    &__list {
+        @extend %flexType1;
+    }
+    &__item {
+        width: 180px;
+        text-align: center;			
+        border-top: 1px solid #c2beba;
+        border-bottom: 1px solid #c2beba;
+    }
+    &__link {
+        @extend %navigationLink;
+    }
+}

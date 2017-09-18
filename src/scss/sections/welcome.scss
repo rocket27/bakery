@@ -21,32 +21,28 @@
     align-items: center;
 }
 
-.header__logo {
-    font-family: 'scriptinaRegular', Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    padding-bottom: 18px;
-}
-
 .mainMenu__list {
-    width: 780px;
+	width: 780px;        
     display: flex;
     justify-content: space-between;
-    font-family: 'alegreyaRegular';
-    text-transform: uppercase;
 }
 
 .mainMenu__item {
-    position: relative;
+	position: relative;
     &::after {
         display: block;
         content: '\223C';
         position: absolute;
-        top: 0;        
+        top: 25px;        
         right: -65px;
     }
     &:last-child::after {
         display: none;
     }
+}
+
+.mainMenu__link {
+	@extend %navigationLink;
 }
 
 .socials {
