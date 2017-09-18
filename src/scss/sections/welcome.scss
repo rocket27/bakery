@@ -30,11 +30,8 @@
 .mainMenu__item {
 	position: relative;
     &::after {
-        display: block;
-        content: '\223C';
-        position: absolute;
-        top: 25px;        
-        right: -65px;
+        @extend %tilde;
+        right: -65px;        
     }
     &:last-child::after {
         display: none;
