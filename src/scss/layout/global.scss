@@ -58,8 +58,13 @@ a:link, a:visited, a:hover, a:active {
 
 .logo {
     font-family: 'scriptinaRegular';
-    font-size: 30px;
-    padding-bottom: 18px;
+	font-size: 30px;
+	&_header {
+		padding-bottom: 18px;		
+	}
+	&_footer {
+		line-height: 70px;		
+	}
 }
 
 .informationBox {

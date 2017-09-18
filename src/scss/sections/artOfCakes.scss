@@ -114,4 +114,8 @@
 
 .galleryMark {
     @extend %positionCenter;
+    transform: translate(-50%, -49%);
+    &__image {
+        display: block;
+    }
 }

@@ -28,10 +28,11 @@
 }
 
 .mainMenu__item {
+    height: 70px;
 	position: relative;
     &::after {
         @extend %tilde;
-        right: -65px;        
+        right: -56px;        
     }
     &:last-child::after {
         display: none;
