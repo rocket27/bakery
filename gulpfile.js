@@ -28,21 +28,21 @@ const del          = require('del'),
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 let jsModules = [ // Массив своих JS файлов в необходимом порядке
-    // 'src/js/owlCarousel.js'
+    'src/js/owlCarousel.js'
     // остальные файлы
 ]
 
 let vendorJs = [ // Массив сторонних библиотек JS в необходимом порядке
-    // 'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/owl.carousel/dist/owl.carousel.js',
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/owl.carousel/dist/owl.carousel.js'
     // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
     // остальные файлы
 ]
 
 let vendorCss = [ // Массив сторонних библиотек CSS в необходимом порядке
-    'node_modules/normalize.css/normalize.css'
-    // 'node_modules/owl.carousel/dist/assets/owl.carousel.css',
-    // 'node_modules/owl.carousel/dist/assets/owl.theme.default.css',
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+    'node_modules/owl.carousel/dist/assets/owl.theme.default.css'
     // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
     // остальные файлы
 ]
