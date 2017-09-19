@@ -102,12 +102,14 @@ a.theJibaritoSandwichContent__link {
     position: absolute;
     left: -22px;
     bottom: 126px;
+    z-index: 40;
 }
 
 .productInfo {
     position: absolute;
     top: 50px;
     right: 10px;
+    z-index: 50;
     &__item {
         margin-bottom: 1px;
         &:last-child {
