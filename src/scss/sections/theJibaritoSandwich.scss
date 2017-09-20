@@ -144,5 +144,9 @@ a.theJibaritoSandwichContent__link {
     }
     &__link {
         @extend %navigationLink;
+        @extend %linkTransition;
+        &:hover {
+            color: $color2;
+        }
     }
 }

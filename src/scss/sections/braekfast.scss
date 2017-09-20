@@ -132,7 +132,7 @@ a.extendetMenu__link {
     text-transform: uppercase;        
     border: 1px solid $color4;
     padding: 10px 0;
-    z-index: 30;
+    // z-index: 30;
 }
 
 .container_breakfast {
@@ -147,6 +147,6 @@ a.extendetMenu__link {
         right: 0;
         bottom: 0;
         transform: translateX(50%);
-        z-index: 20;
+        z-index: 10;
     }
 }

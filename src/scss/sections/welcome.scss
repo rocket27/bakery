@@ -40,7 +40,8 @@
 }
 
 .mainMenu__link {
-	@extend %navigationLink;
+    @extend %navigationLink;
+    @extend %linkTransition;
 }
 
 .socials {
@@ -54,7 +55,7 @@
         fill: #efebe4;
         transition: fill .3s;
         &:hover {
-            fill: #fff;
+            fill: $color3;
         }
     }
 }
@@ -79,9 +80,11 @@
         height: 50px;
         background-color: $bgColor;
         font-family: 'alegreyaBold';
-        line-height: 24px;
+        line-height: 50px;
+        text-align: center;
         text-transform: uppercase;
         border: 1px dashed $color4;
+        @extend %linkTransition;
     }
 }
 
