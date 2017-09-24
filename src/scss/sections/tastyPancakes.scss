@@ -60,6 +60,10 @@
     width: 330px;
     @extend %flexType1;
     margin: 0 auto;
+    &__item {
+        width: 90px;
+        height: 90px;
+    }
     &__image {
         display: block;
     }
