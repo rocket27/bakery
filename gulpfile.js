@@ -28,6 +28,7 @@ const del          = require('del'),
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 let jsModules = [ // Массив своих JS файлов в необходимом порядке
+    'src/js/anchor.js',
     'src/js/owlCarousel.js'
     // остальные файлы
 ]
